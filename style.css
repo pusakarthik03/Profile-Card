@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins" sans-serif ;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:blanchedalmond;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: rgb(145,209,243);
+    padding: 3px;
+}
+.image .profile-img{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+.Profile-card{
+    max-width: 250px;
+    background-color:rgb(145,209,243) ;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.Profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data .name{
+    font-size: 25px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+
+} 
+.Profile-card .media-button{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-button .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+.Profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #120f68;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.buttons .button:hover{
+    background-color: #103497;
+}
+.Profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border: #ffff;
+}
+.data .number{
+    display: flex;
+    margin: 0 14px 2px 0px;
+}
+.Profile-card::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #0f3c53;
+}
